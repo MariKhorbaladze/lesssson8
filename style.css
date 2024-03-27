@@ -1,0 +1,42 @@
+.first-car { 
+     position: absolute;
+     animation-name: moveRight;
+     animation-duration: 2s;
+     animation-timing-function: linear;
+     animation-direction: alternate;
+     animation-fill-mode: forwards;
+     animation-iteration-count: infinite;
+     animation-delay: 0.5s;        
+}
+
+.second-car { 
+   position: absolute;
+   animation-name: moveLeft;
+   animation-duration: 2s;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+   animation-delay: 0.5s;
+   background-color: white;
+   margin-top: 500px; 
+}
+
+@keyframes moveRight { 
+   0% { 
+    left: 0;
+   }
+   100% { 
+    left: 500px;
+   }
+}
+
+@keyframes moveLeft {
+    0% { 
+        right: 0;
+    }
+    100% { 
+        right: 1000px;
+    }
+}
+
